@@ -9,7 +9,6 @@ imgarr = np.array(img)
 arrsize = img.size
 newarr = np.zeros(arrsize) #color
 fianlimg = np.zeros((512,512,3))
-
 grouparr = np.zeros(arrsize)
 groupcontent = [] #1.group other.[x, y]
 tempfind = []
@@ -114,7 +113,7 @@ def Graphic():
     conlong = len(groupcontent)
     count = 0
     while count != conlong:
-        if len(groupcontent[count]) < 500:
+        if len(groupcontent[count]) < 50:
             groupcontent.pop(count)
             conlong -= 1
         else:
@@ -133,8 +132,6 @@ def Graphic():
 
 if __name__=="__main__":
     Binarize()
-    Connected()
-    Graphic()
             
 
     

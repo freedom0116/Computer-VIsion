@@ -6,7 +6,7 @@ from PIL import Image
 
 img = cv2.imread("lena.bmp", cv2.IMREAD_GRAYSCALE)
 imgarr = np.array(img)
-arrsize = len(imgarr), len(imgarr[0])
+arrsize = len(imgarr[0]), len(imgarr)
 
 # Dilatio use octogonal 3-5-5-5-3 kernel
 def Dilation(arr, refarr, x, y):
