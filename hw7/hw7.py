@@ -205,15 +205,8 @@ def Thinning(refarr, output):
                 output[y][x] = 255
             else:
                 output[y][x] = 0     
-            print(pairarr[y][x], end = '')
-        print()
-
-
-
-                
-            
-
-
+        #     print(pairarr[y][x], end = '')
+        # print()
 
 
 # Downsampling
